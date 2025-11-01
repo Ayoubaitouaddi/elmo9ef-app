@@ -1,0 +1,136 @@
+/* tasker Styles */
+
+/* Styles pour le formulaire */
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .custom-file-input {
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .custom-file-input::file-selector-button {
+    background-color: #2B4C32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 0px;
+  }
+  
+  .custom-file-input::file-selector-button:hover {
+    background-color: white;
+    color: #2B4C32;
+  }
+  
+  
+  .image-container, .form-container {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .image-container img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Styles pour les écrans mobiles */
+  @media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+  
+    .image-container {
+        order: -1; /* L'image apparaît en premier sur mobile */
+        margin-bottom: 20px;
+    }
+  }
+  
+  /*taskers css*/
+  
+  .tasker-profile img {
+    border-radius: 50%;
+    border: 5px solid #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasker-profile h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*index taskers*/
+  
+  .btn-custom-info {
+      background-color: #2B4C32;
+      border-color: #2B4C32;
+      color: white;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Légère agrandissement de la carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre autour de la carte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+  }
+  
+  

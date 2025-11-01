@@ -1,0 +1,110 @@
+body {
+    background-image: url("{{ asset('../images/bg-elmo9ef.png') }}");
+    background-size: cover; /* L'image couvre toute la page */
+    background-position: center center; /* Centre l'image */
+    background-attachment: fixed; /* Rends l'image fixe pendant le défilement */
+  }
+
+/*Home page*/
+
+.txt {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+}
+
+h1{
+    margin: 0;
+    font-family: var(--next-font-inter, "Inter"), Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: normal;
+    color: #1A1E1D;
+    color: #2B4C32;
+    z-index: 1;
+    display: block;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 600px; /* Largeur maximale */
+  margin: 0 auto; /* Centrer la barre */
+  background-color: #fff; /* Fond blanc */
+  border: 1px solid #ddd; /* Bordure légère */
+  border-radius: 30px; /* Bords arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.search-bar input {
+  flex: 1; /* Prend tout l'espace disponible */
+  border: none; /* Pas de bordure */
+  outline: none; /* Supprimer le contour par défaut */
+  font-size: 1rem; /* Taille du texte */
+  padding: 10px; /* Espacement intérieur */
+  margin-left: 10px; /* Espace entre l'icône et le champ */
+}
+.search-bar input::placeholder {
+  color: #2B4C32; /* Couleur du placeholder */
+}
+.search-bar button {
+  background-color: #2B4C32; /* Couleur de fond du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 25px; /* Bords arrondis */
+  color: #fff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement intérieur */
+  cursor: pointer; /* Curseur pointer */
+  transition: background-color 0.3s; /* Transition fluide */
+}
+.search-bar button:hover {
+  background-color: #2B4C32; /* Changement de couleur au survol */
+  border: 1px solid #2B4C32; /* Bordure au survol */
+}
+
+.search-results {
+  display: inline;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.result-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  max-width: 600px; /* Largeur maximale */
+  margin: 0 auto; /* Centrer la barre */
+  background-color: #fff; /* Fond blanc */
+  border: 1px solid #ddd; /* Bordure légère */
+  padding: 10px 20px; /* Espacement intérieur */
+}
+
+.result-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-name {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn-custom {
+  background-color: #2B4C32;
+    border: 2px solid #2B4C32; /* Couleur verte */
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  border: 2px solid #2B4C32;
+    background-color: white;
+    color: #2B4C32;
+}
+
+

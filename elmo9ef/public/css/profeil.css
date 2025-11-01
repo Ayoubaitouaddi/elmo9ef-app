@@ -1,0 +1,223 @@
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Profile Header */
+    .profile-header {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    /* Cover Photo */
+    .cover-photo-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0 ;
+    }
+    
+    .cover-photo {
+        height: 250px;
+        background-color: #6c757d;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.3s ease;
+    }
+    
+    .cover-edit-btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: none;
+        transition: all 0.3s ease;
+        font-size: 14px;
+    }
+    
+    .cover-edit-btn:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    .cover-photo-container:hover .cover-edit-btn {
+        display: block;
+    }
+    
+    /* Profile Photo */
+    .profile-photo-container {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin: -60px auto 20px;
+        border: 5px solid white;
+        border-radius: 50%;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+    
+    .profile-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .profile-photo-edit {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        transition: all 0.3s ease;
+    }
+    
+    .profile-photo-edit:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    .profile-photo-container:hover .profile-photo-edit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Profile Content */
+    .profile-content {
+        padding: 0 30px 30px;
+        text-align: center;
+    }
+    
+    .company-name {
+        font-size: 28px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .company-subtitle {
+        font-size: 18px;
+        color: #6c757d;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    
+    .contact-info {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        text-align: left;
+    }
+    
+    .contact-info div {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+    
+    .contact-info strong {
+        color: #495057;
+        margin-right: 5px;
+    }
+    
+    /* Buttons */
+    .share-btn {
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        padding: 8px 25px;
+        border-radius: 20px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .share-btn:hover {
+        background-color: #0b5ed7;
+        transform: translateY(-2px);
+    }
+    
+    /* Sections */
+    .divider {
+        height: 1px;
+        background-color: #e9ecef;
+        margin: 25px 0;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .about-section {
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+    
+    .about-section p {
+        color: #495057;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+    
+    /* List styling */
+    .list-unstyled {
+        padding-left: 0;
+    }
+    
+    .list-unstyled li {
+        padding: 5px 0;
+        color: #6c757d;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .cover-photo {
+            height: 180px;
+        }
+        
+        .profile-content {
+            padding: 0 15px 20px;
+        }
+        
+        .company-name {
+            font-size: 24px;
+        }
+        
+        .company-subtitle {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .cover-photo {
+            height: 150px;
+        }
+        
+        .profile-photo-container {
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+        }
+    }
